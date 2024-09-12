@@ -1,0 +1,11 @@
+<h2>Parent Component</h2>
+<p>Primitive Data: {{ primitiveData }}</p>
+<p>Non-Primitive Data: {{ nonPrimitiveData.value }}</p>
+<p>Service Message: {{ hierdepService.getMessage() }}</p>
+
+<button (click)="updatePrimitiveData()">Update Primitive Data</button>
+<button (click)="updateNonPrimitiveData()">Update Non-Primitive Data</button>
+<button (click)="updateServiceMessage()">Update Service Message</button>
+
+<hr />
+<app-child [data]="nonPrimitiveData"></app-child>
